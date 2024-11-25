@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augusto Wen - Professional Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(120deg, #1a365d 0%, #2563eb 100%);
+        }
+        .section-bg {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+        .skill-pill {
+            background-color: rgba(37, 99, 235, 0.1);
+            transition: all 0.3s ease;
+        }
+        .skill-pill:hover {
+            background-color: rgba(37, 99, 235, 0.2);
+            transform: translateY(-2px);
+        }
+        .company-link {
+            color: #2563eb;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .company-link:hover {
+            color: #1e40af;
+            text-decoration: underline;
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header Section (Same as before) -->
+    <header class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl font-bold mb-4">Augusto Wen</h1>
+                <p class="text-xl mb-4">Corporate Manager at Pine Hill International</p>
+                <p class="text-lg mb-6">Lisbon, Portugal | augustopessoalxj@gmail.com</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="mailto:augustopessoalxj@gmail.com" class="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-100 transition duration-300">
+                        <i class="far fa-envelope mr-2"></i>Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-center space-x-8">
+                <a href="#experience" class="text-gray-600 hover:text-blue-600 transition duration-300">Experience</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-600 transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition duration-300">Projects</a>
+                <a href="#languages" class="text-gray-600 hover:text-blue-600 transition duration-300">Languages</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Professional Summary (Same as before) -->
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Professional Summary</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Multilingual Corporate Manager with expertise in business consulting, data quality management, and linguistic services. Leveraging a unique combination of language proficiency (C1-C2 in 5 languages) and technical skills to drive international business operations and ensure excellence in cross-cultural communication.
+            </p>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Professional Experience</h2>
+            
+            <!-- Current Role -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600">
+                    Corporate Manager at 
+                    <a href="https://pinehillinternational.pt" target="_blank" rel="noopener noreferrer" class="company-link">
+                        Pine Hill International
+                        <i class="fas fa-external-link-alt text-sm ml-1"></i>
+                    </a>
+                </h3>
+                <p class="text-gray-600 mb-2">Lisbon, Portugal | 2024 - Present</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Lead corporate initiatives focusing on international business development</li>
+                    <li>Manage cross-functional teams in delivering comprehensive business solutions</li>
+                    <li>Facilitate communication between international stakeholders</li>
+                    <li>Drive operational excellence through data-driven decision making</li>
+                </ul>
+            </div>
+
+            <!-- Previous Roles -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600">
+                    Data Quality and Platform Support at 
+                    <a href="https://dealroom.co" target="_blank" rel="noopener noreferrer" class="company-link">
+                        Dealroom.co
+                        <i class="fas fa-external-link-alt text-sm ml-1"></i>
+                    </a>
+                </h3>
+                <p class="text-gray-600 mb-2">Lisbon, Portugal | 2024</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Spearheaded data quality initiatives ensuring platform-wide consistency</li>
+                    <li>Collaborated with cross-functional teams to resolve complex technical issues</li>
+                </ul>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600">
+                    Linguistic Quality Assurance Tester at 
+                    <a href="https://globalstep.com" target="_blank" rel="noopener noreferrer" class="company-link">
+                        Globalstep
+                        <i class="fas fa-external-link-alt text-sm ml-1"></i>
+                    </a>
+                </h3>
+                <p class="text-gray-600 mb-2">Lisbon, Portugal | 2024</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Conducted comprehensive linguistic quality assurance for Traditional Chinese content</li>
+                    <li>Established quality control protocols for localization processes</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Example Project Card (You can duplicate this for more projects) -->
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="/api/placeholder/400/200" alt="Project thumbnail" class="w-full h-48 object-cover"/>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title</h3>
+                        <p class="text-gray-600 mb-4">Brief description of the project goes here. Add your project details when ready.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill text-sm rounded-full px-3 py-1 text-blue-600">Tech Stack</span>
+                            <span class="skill-pill text-sm rounded-full px-3 py-1 text-blue-600">Tools Used</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more project cards here as needed -->
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden flex items-center justify-center h-full">
+                    <div class="text-center p-6">
+                        <i class="fas fa-plus-circle text-4xl text-blue-600 mb-4"></i>
+                        <p class="text-gray-600">More projects coming soon!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Languages (Same as before) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <!-- Technical Skills -->
+            <section id="skills" class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Technical Skills</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="font-semibold text-gray-700 mb-2">Programming & Data</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill rounded-full px-4 py-2 text-blue-600">Python</span>
+                            <span class="skill-pill rounded-full px-4 py-2 text-blue-600">SQL</span>
+                            <span class="skill-pill rounded-full px-4 py-2 text-blue-600">SAS</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-700 mb-2">Business Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill rounded-full px-4 py-2 text-blue-600">Power BI</span>
+                            <span class="skill-pill rounded-full px-4 py-2 text-blue-600">Excel</span>
+                            <span class="skill-pill rounded-full px-4 py-2 text-blue-600">Google Sheets</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Languages -->
+            <section id="languages" class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Languages</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Chinese - Mandarin</span>
+                        <span class="text-blue-600 font-semibold">C2</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Chinese - Cantonese</span>
+                        <span class="text-blue-600 font-semibold">C2</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Chinese - Hakka</span>
+                        <span class="text-blue-600 font-semibold">C2</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Portuguese</span>
+                        <span class="text-blue-600 font-semibold">C1</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">English</span>
+                        <span class="text-blue-600 font-semibold">C1</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 Augusto Wen. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
